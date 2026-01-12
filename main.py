@@ -4,13 +4,6 @@ if len(sys.argv) != 2:
     print("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
 
-#frankenstein_path = "books/frankenstein.txt"
-
-def get_book_text(file_path):
-    with open(file_path) as f:
-        file_contents = f.read()
-    return file_contents
-
 # word_counter - accepts file path and returns total word count
 from stats import word_counter
 total_word_count = word_counter(sys.argv[1])
